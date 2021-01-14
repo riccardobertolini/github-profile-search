@@ -48,7 +48,7 @@ export const UsersList = ({ usersList }:GithubList) => {
 				if (data) {
 					return (
 						<li key={data.login} className={selectedItem === index + 1 ? 'selected' : ''} onClick={() => window.open(data?.html_url , "_blank")}>
-							<img src={data.avatar_url} />
+							<img src={data.avatar_url} alt="avatar" />
 							<p>{data.login}</p>
 						</li>
 					)
